@@ -106,27 +106,23 @@ int main(){
     printf("PIB per Capita: Carta 1 venceu (%d)\n", PIB_per_capita01 > PIB_per_capita02);
     printf("Super Poder: Carta 1 venceu (%d)\n", superPoder01 > superPoder02);
 
-    // Comparação do Atributo Densidade Populacional da Carta 01 e da Carta 02
-   
-    printf("*** COMPARAÇÃO DE CARTAS (ATRIBUTO: Densidade Populacional) ***\n");
-    printf("Carta 1 - (%s): %.2f\n", nome_cidade01, densidadepopulacional01);
-    printf("Carta 2 - (%s): %.2f\n", nome_cidade02, densidadepopulacional02);
+    // Comparação do Atributo de Densidade populacional da Carta 01 e 02
+    printf("***COMPARAÇÃO - ATRIBUTO: DENSIDADE POPULACIONAL!");
 
-    if (densidadepopulacional01 > densidadepopulacional02){
-        printf("Resultado: Carta 02 (%s) venceu!\n", nome_cidade02);
+    printf("Carta 01 - (%s): %.2f\n", nome_cidade01, densidadepopulacional01);
+    printf("Carta 02 - (%s): %.2f\n", nome_cidade02, densidadepopulacional02);
+
+    if (densidadepopulacional01 > densidadepopulacional02)
+    {
+        printf("Resultado: A Carta 02 (%s) venceu!\n", nome_cidade02);
     } else if (densidadepopulacional01 < densidadepopulacional02)
     {
         printf("Resultado: Carta 01 (%s) venceu!\n", nome_cidade01);
     } else {
-        printf("Resultado: As Cartas possuem a mesma densidade populacional!\n");
+        printf("Resultado: As duas Cartas possuem a mesma densidade populacional!\n");
     }
     
-
-
-
-
-
     
-
     return 0;
+
 }
