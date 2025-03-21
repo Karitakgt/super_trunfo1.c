@@ -17,7 +17,7 @@ int main(){
     printf("Digite a letra que representa o Estado da Carta 01 (A - H): ");
     scanf(" %c", &estado01);
     printf("Digite o código do Estado da Carta 01: ");
-    scanf(" %s", &codigo01);
+    scanf("%s", &codigo01);
     printf("Digite o nome da Cidade da Carta 01: ");
     scanf("%s", &nome_cidade01);
     printf("Digite a população da Carta 01: ");
